@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+{% block page_content %}
+<ul class="posts">
+    {% for post in posts %}
+    <li class="post">
+        <div class="post-thumbnail">
+            <!-- <a href={{ post.img }}>
+                <img class="img-rounded profile-thumbnail" src={{ post.img }}>
+            </a>
+            -->
+            {{ post.website }}
+        </div>
+        <div class="post-content">
+            <div class="profile-header">
+                <div>
+                    <h3><input type="button" value={{ post.classify }}>
+                    {% if post.title %}
+                        <a target="_blank" href={{ post.url }}>{{ post.title | safe }}</a>
+                    {% endif %}	          
+                    {{ post.timestamp }}
+		    </h3>
+                </div>
+
+             </div>
+            <div class="post-body">
+		<h3 style="text-indent:2em;" >{% if post.html %}
+                    {{ post.html | safe }}
+                {% else %}
+                    {{ post.html }}
+                {% endif %}
+		</h3>
+            </div>
+	    <br></br>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

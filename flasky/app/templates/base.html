@@ -1,0 +1,35 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Style{% endblock%}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">首页</a>
+        </div>
+        	<div class="navbar-collapse collapse">
+        	</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+    	{% block page_content %}
+	{% endblock %}
+	</div>
+{% endblock %}
+
+{% block scripts %}
+	{{ super() }}
+	{{ moment.include_moment() }}
+{% endblock %}
