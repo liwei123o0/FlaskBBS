@@ -5,7 +5,7 @@ from flask import Flask,render_template
 from flask_moment import Moment
 from flask_wtf import Form
 from wtforms import StringField,SubmitField
-from wtforms.validators import Required
+from wtforms.validators import DataRequired
 from datetime import datetime
 from flask_bootstrap import Bootstrap
 
@@ -36,7 +36,7 @@ def internal_server_error(e):
     return render_template('500.html'),500
 
 class NameForm(Form):
-    name = StringField(u'你是谁?',validators=[Required])
+    name = StringField(u'你是谁?',validators=[DataRequired()])
     submit = SubmitField(u'提交')
 
 if __name__ =='__main__':
