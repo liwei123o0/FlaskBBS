@@ -33,6 +33,10 @@
     {{ wtf.quick_form(form) }}
      <div class="page-header">
          <h1>你好，{% if name %}{{ name }}!{% else %}游客!{% endif %}</h1>
-
+        {% if not known %}
+            <p>很高兴第一次见到你！</p>
+        {% else %}
+            <p>欢迎您再次来我的博客光临！</p>
+        {% endif %}
      </div>
 {% endblock %}
