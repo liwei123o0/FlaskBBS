@@ -12,11 +12,12 @@
 {#            本地化时间处理#}
             <p>现在时间是： {{ moment(current_time).format('LLLL') }}.</p>
             <p>何时来访时间： {{ moment(current_time).fromNow(refresh=True) }}</p>
-{#            {% if current_user.is_authenticated() %}#}
-{#            {{ current_user.username }}#}
-{#            {% else %}#}
-{#                Stranger#}
-{#            {% endif %}!#}
+{#        flask-login 0.3.0版本以后的书写方式---------------0.2.7版本是current_user.is_authenticated()这样的#}
+            {% if current_user.is_authenticated %}
+            {{ current_user.username }}
+            {% else %}
+               Stranger
+           {% endif %}
         </div>
     </div>
 {#    <form class="navbar-form   navbar-text" role="search">#}

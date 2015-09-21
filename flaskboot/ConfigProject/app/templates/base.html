@@ -50,13 +50,14 @@
               </ul>
             </li>
           </ul>
-{#         <ul class="nav navbar-nav navbar-right">#}
-{#            {% if current_user.is_authenticated() %}#}
-{#            <li><a href="{{ url_for('auth.logout') }}">Sign Out</a></li>#}
-{#            {% else %}#}
-{#            <li><a href="{{ url_for('auth.login') }}">Sign In</a></li>#}
-{#            {% endif %}#}
-{#            </ul>#}
+         <ul class="nav navbar-nav navbar-right">
+         {#        flask-login 0.3.0版本以后的书写方式---------------0.2.7版本是current_user.is_authenticated()这样的#}
+            {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('auth.logout') }}">Sign Out</a></li>
+            {% else %}
+            <li><a href="{{ url_for('auth.login') }}">Sign In</a></li>
+            {% endif %}
+            </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
