@@ -11,7 +11,7 @@
     <title>{% block title %}FlaskBBS{% endblock %}</title>
 
     <!-- Bootstrap -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" href="http://plugin.bang5mai.com/assets/main/modules/adv/css/b5m.adv.all.css" rel="stylesheet">
     <script type="text/javascript" id="b5mmain" charset="utf-8" src="http://plugin.bang5mai.com/assets/main/js/b5m.main.js?v=20150910&amp;version=6.0.5.2&amp;uuid=76c2d7efbba1a114fc12b8139f5d379f&amp;source=15206&amp;acd=1&amp;reason=99&amp;_lv=15&amp;cs=6ef53a0372cc8e1fc9230b708d349886"></script>
 
@@ -50,22 +50,21 @@
               </ul>
             </li>
           </ul>
-{#         <ul class="nav navbar-nav navbar-right">#}
-{#            {% if current_user.is_authenticated() %}#}
-{#            <li><a href="{{ url_for('auth.logout') }}">Sign Out</a></li>#}
-{#            {% else %}#}
-{#            <li><a href="{{ url_for('auth.login') }}">Sign In</a></li>#}
-{#            {% endif %}#}
-{#            </ul>#}
+            <ul class="nav navbar-nav navbar-right">
+            {% if current_user.is_authenticated() %}
+            <li><a href="{{ url_for('auth.logout') }}">Sign Out</a></li>
+            {% else %}
+            <li><a href="{{ url_for('auth.login') }}">Sign In</a></li>
+            {% endif %}
+            </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../static/js/bootstrap.min.js"></script>
-{#    以中文格式本地时间化#}
-      {{ moment.include_moment() }}
+    <script src="../../static/js/bootstrap.min.js"></script>
+    {{ moment.include_moment() }}
     {{ moment.lang('zh-cn') }}
     {% block scripts %}{% endblock %}
   {% endblock %}

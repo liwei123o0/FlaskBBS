@@ -12,6 +12,11 @@
 {#            本地化时间处理#}
             <p>现在时间是： {{ moment(current_time).format('LLLL') }}.</p>
             <p>何时来访时间： {{ moment(current_time).fromNow(refresh=True) }}</p>
+{#            {% if current_user.is_authenticated() %}#}
+{#            {{ current_user.username }}#}
+{#            {% else %}#}
+{#                Stranger#}
+{#            {% endif %}!#}
         </div>
     </div>
 {#    <form class="navbar-form   navbar-text" role="search">#}
@@ -38,5 +43,6 @@
         {% else %}
             <p>欢迎您再次来我的博客光临！</p>
         {% endif %}
+
      </div>
 {% endblock %}
