@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6102c776-a143-4784-91f3-a4db81a1daae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskboot/ConfigProject/app/templates/base.html" afterPath="$PROJECT_DIR$/flaskboot/ConfigProject/app/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskboot/ConfigProject/app/auth/forms.py" afterPath="$PROJECT_DIR$/flaskboot/ConfigProject/app/auth/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flaskboot/ConfigProject/app/templates/index.html" afterPath="$PROJECT_DIR$/flaskboot/ConfigProject/app/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FlaskBBS.iws" />
@@ -67,7 +64,7 @@
       <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskboot/ConfigProject/app/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.398524" vertical-offset="1215" max-vertical-offset="2187">
+            <state vertical-scroll-proportion="0.39926064" vertical-offset="1215" max-vertical-offset="2187">
               <caret line="53" column="104" selection-start-line="53" selection-start-column="104" selection-end-line="53" selection-end-column="104" />
               <folding />
             </state>
@@ -537,14 +534,20 @@
       <created>1441795373685</created>
       <updated>1441795373685</updated>
     </task>
+    <task id="LOCAL-00001" summary="ONE_1.3 修复flask版本兼容导致JinJa2不兼容问题！&#10;{#        flask-login 0.3.0版本以后的书写方式---------------0.2.7版本是current_user.is_authenticated()这样的#}">
+      <created>1442834702982</created>
+      <updated>1442834702982</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3300866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -578,6 +581,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="ONE_1.3 修复flask版本兼容导致JinJa2不兼容问题！&#10;{#        flask-login 0.3.0版本以后的书写方式---------------0.2.7版本是current_user.is_authenticated()这样的#}" />
+    <option name="LAST_COMMIT_MESSAGE" value="ONE_1.3 修复flask版本兼容导致JinJa2不兼容问题！&#10;{#        flask-login 0.3.0版本以后的书写方式---------------0.2.7版本是current_user.is_authenticated()这样的#}" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -655,7 +660,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskboot/ConfigProject/app/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.398524" vertical-offset="1215" max-vertical-offset="2187">
+        <state vertical-scroll-proportion="0.39926064" vertical-offset="1215" max-vertical-offset="2187">
           <caret line="53" column="104" selection-start-line="53" selection-start-column="104" selection-end-line="53" selection-end-column="104" />
           <folding />
         </state>
