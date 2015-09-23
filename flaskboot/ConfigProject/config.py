@@ -4,7 +4,7 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
-    SECRET_KEY = 'hard to guess string'
+    SECRET_KEY = 'liweiCDK'
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
     FLASK_MAIL_SUBJECT_PREFIX = '[ConfigProject]'
     FLASK_MAIL_SENDER = 'liweijavakf@163.com'
