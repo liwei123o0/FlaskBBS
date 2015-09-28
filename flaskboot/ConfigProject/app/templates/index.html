@@ -18,6 +18,16 @@
             {% else %}
                您是未登录用户！
            {% endif %}
+        <br>
+        <div class="container">
+        {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning">
+{#            &times;  注意这个东西#}
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
+        {% endfor %}
+    </div>
         </div>
     </div>
 {#    <form class="navbar-form   navbar-text" role="search">#}
@@ -27,17 +37,6 @@
 {#         <button type="submit" class="btn btn-default">提交</button>#}
 {#    </form>#}
     {{ wtf.quick_form(form) }}
-    <div class="container">
-        {% for message in get_flashed_messages() %}
-        <div class="alert alert-warning">
-{#            &times;  注意这个东西#}
-            {{ message }}
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-        </div>
-        {% endfor %}
-    </div>
-{#    {{ form.csrf_token }}#}
-
      <div class="page-header">
          <h1>你好，{% if name %}{{ name }}!{% else %}游客!{% endif %}</h1>
         {% if not known %}
@@ -45,6 +44,5 @@
         {% else %}
             <p>欢迎您再次来我的博客光临！</p>
         {% endif %}
-
      </div>
 {% endblock %}
